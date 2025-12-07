@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+// using System.Diagnostics;
 using UnityEngine;
 public class TileSC : MonoBehaviour
 {
@@ -38,8 +39,8 @@ public class TileSC : MonoBehaviour
             onclick();
             }else if(Input.GetKey(KeyCode.RightShift)){
                 var a = Instantiate(notePrefab, this.transform.position, Quaternion.Euler(0,0,0), controlScript.gameObject.transform).GetComponent<pressySC>();
-                a.instantiate(120);
-                a.instantiate(2.0f);
+                a.instantiate(120, 2.0f, 2.0f);
+                Debug.Log(notePrefab);
             }else{
                 sr.color = new Color(1,1,1,0.015f);
             onclick();

@@ -19,17 +19,17 @@ public class listNote
         this.type = type;
         this.location = location;
     }
-    public GameObject instantiate(GameObject control, Transform location, Transform parent){
-        //idrk if this will be iused?
-        GameObject load = (GameObject)Resources.Load("Prefabs/" + type +"Note");
-        GameObject output = GameObject.Instantiate(load, location.position, Quaternion.Euler(0,0,0), parent);
-        output.GetComponent<pressySC>().instantiate(beatIn);
-        return output;
-    }
-    public GameObject instantiate(GameObject control){
-        GameObject load = (GameObject)Resources.Load("Prefabs/" + type +"Note");
-        GameObject output = GameObject.Instantiate(load, GameObject.Find(location).transform.position, Quaternion.Euler(0,0,0));
-        output.GetComponent<pressySC>().instantiate(beatIn);
-        return output;
-    }
+    // public GameObject instantiate(GameObject control, Transform location, Transform parent){
+    //     //idrk if this will be iused?
+    //     GameObject load = (GameObject)Resources.Load("Prefabs/" + type +"Note");
+    //     GameObject output = GameObject.Instantiate(load, location.position, Quaternion.Euler(0,0,0), parent);
+    //     output.GetComponent<pressySC>().instantiate(beatIn);
+    //     return output;
+    // }
+    // public GameObject instantiate(GameObject control){
+    //     GameObject load = (GameObject)Resources.Load("Prefabs/" + type +"Note");
+    //     GameObject output = GameObject.Instantiate(load, GameObject.Find(location).transform.position, Quaternion.Euler(0,0,0));
+    //     output.GetComponent<pressySC>().instantiate(beatIn);
+    //     return output;
+    // }
 }

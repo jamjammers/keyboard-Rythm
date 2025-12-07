@@ -32,7 +32,7 @@ public class song
     }
     public void instantiate(GameObject control){
         foreach(listNote note in notes){
-            note.instantiate(control);
+            // note.instantiate(control);
         }
     }
 }
